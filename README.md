@@ -32,7 +32,7 @@ Selanjutnya kita akan testing menggunakan Postman.
 
 #### Register
 Pertama-tama kita daftarkan user baru terlebih dahulu agar kita bisa melakukan login.
-Buka postman lalu pilih method POST kemudian ketikkkan URL http://localhost:8000/api/auth/register
+Buka postman lalu pilih method POST kemudian ketikkkan URL http://localhost:8000/api/register
 Kemudian pilih tab Body. Lalu pada radiobox pilih raw dan typenya pilih JSON. Selanjutnya pada bagian textbox inputkan data registrasinya seperti berikut:
 {
 "name": "Rony",
@@ -42,12 +42,12 @@ Kemudian pilih tab Body. Lalu pada radiobox pilih raw dan typenya pilih JSON. Se
 }
 Selanjutnya klik tombol Send
 
-![001](https://user-images.githubusercontent.com/51890752/84871233-7b6ea880-b0aa-11ea-8626-73abe2ab2aea.jpg)
+![001](https://user-images.githubusercontent.com/51890752/85212774-72b6f480-b380-11ea-83a5-f515b5612b12.jpg)
 
 
 #### Login
 Setelah registrasi berhasil selanjutnya kita coba untuk login dengan user yang sudah kita registrasikan tersebut.
-Buka postman lalu pilih method POST kemudian ketikkkan URL http://localhost:8000/api/auth/login
+Buka postman lalu pilih method POST kemudian ketikkkan URL http://localhost:8000/api/login
 Kemudian pilih tab Body. Lalu pada radiobox pilih raw raw dan typenya pilih JSON. Selanjutnya pada bagian textbox inputkan data email dan password untuk login:
 {
 "email": "rony@rony.com",
@@ -55,17 +55,17 @@ Kemudian pilih tab Body. Lalu pada radiobox pilih raw raw dan typenya pilih JSON
 }
 Selanjutnya klik tombol Send
 
-![002](https://user-images.githubusercontent.com/51890752/84871264-87f30100-b0aa-11ea-8674-21c4a57918e8.jpg)
+![002](https://user-images.githubusercontent.com/51890752/85212788-882c1e80-b380-11ea-8a03-3c6db261ebb0.jpg)
 
 Jika login berhasil, maka kita akan mendapatkan access token. Access Token tersebut nanti akan kita gunakan untuk proses selanjutnya. 
 
 ##### Profile
 Selanjutnya kita akan mencoba mengakses link Profile.
 Link profile ini hanya bisa diakses dengan menggunakan token.
-Buka postman lalu pilih method GET kemudian ketikkkan URL http://localhost:8000/api/auth/profile
+Buka postman lalu pilih method GET kemudian ketikkkan URL http://localhost:8000/api/profile
 Kemudian pilih tab Authorization. Lalu pada combo TYPE pilih Bearear Token. Selanjutnya pada textbox Token isi dengan data access token yang didapat pada saat login sebelumnya.
 Selanjutnya klik tombol Send
-![003](https://user-images.githubusercontent.com/51890752/84871340-99d4a400-b0aa-11ea-8702-ac9133ed4576.jpg)
+![003](https://user-images.githubusercontent.com/51890752/85212799-9e39df00-b380-11ea-9d06-5ecb3cc214c3.jpg)
 
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
